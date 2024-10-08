@@ -1,0 +1,643 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 10px 20px;
+    position: fixed;
+    /* Navbar fixed position */
+    top: 0;
+    /* Position the navbar at the top */
+    left: 0;
+    /* Position the navbar on the left */
+    z-index: 1000;
+    width: 100%;
+}
+
+.sticky {
+    /* Optional: add additional styles when the navbar is sticky */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Example shadow for visibility */
+}
+
+/* Navbar when scrolled */
+.scrolled {
+    background-color: #ff0000;
+    /* Background color when scrolled */
+}
+
+/* Transparent navbar */
+.transparent {
+    background-color: transparent;
+}
+
+.navbar .logo img {
+    max-height: 50px;
+    /* Adjust based on your logo size */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 10px;
+    transition: text-decoration 0.3s;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 7px 10px;
+    border: 3px solid whitesmoke;
+    border-radius: 50px;
+}
+
+.search-bar input[type="text"] {
+    background-color: transparent;
+    color: rgb(10, 1, 1);
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.head,
+.head-ex {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: wavy;
+}
+
+.para,
+.para-ex {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 20px;
+    text-decoration: wavy;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+}
+
+@keyframes scaleup {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(50px);
+    }
+}
+
+/* Responsive code for navbar */
+@media (max-width: 768px) {
+    .navbar .search-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 5px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        font-size: 5px;
+    }
+}
+
+/*  Above code for carosle banner and nav bar 1st or 2nd section- */
+.our-items {
+    padding: 25px;
+    background-color: #8B2D2D;
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    /*flex-direction: row;*/
+    flex-wrap: wrap;
+    /* Allows items to wrap onto multiple lines if necessary */
+    gap: 40px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-shadow: 1px 1px 1px lightskyblue;
+}
+
+.item img {
+    width: 50%;
+    /* Adjust size as needed */
+    height: 50%;
+    /* Adjust size as needed */
+    margin-top: 10px;
+    /* Space between image and heading */
+    color: #8B2D2D;
+}
+
+.item h3 {
+    margin: 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.item p {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.item-img {
+    max-width: 80px;
+    /* Limit the image width */
+    height: auto;
+    /* Maintain aspect ratio */
+    animation: scaleup 4s ease-in-out infinite alternate both;
+}
+
+/* Above The code for our items 3rd section */
+.space-text {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.flex-container-space {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.item-space {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.item-space img {
+    width: 600px;
+    /* Adjust size as needed */
+    height: 327px;
+    /* Adjust size as needed */
+}
+
+.item-space span {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    text-overflow: none;
+    font-size: 18px;
+    margin: 0;
+}
+
+.item-space h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-overflow: none;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/*-- Above The code for Spaces We Cater To ot 4th section */
+
+.help-btn {
+    font-size: 20px;
+    color: #8B2D2D;
+    background-color: transparent;
+    border: 2px solid #8B2D2D;
+    padding: 10px 35px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transition */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.help-btn:hover {
+    background-color: #8B2D2D;
+    color: #fff;
+}
+
+.sec-btn {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* Above The code for Help Button or 5th section */
+
+.offer-text {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.flex-container-offer {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.item-offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.item-offer img {
+    width: 200px;
+    height: auto;
+}
+
+.item-offer h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-overflow: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Above The code for Our Offerings & 6th section */
+
+.custom-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.custom-button .button-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.custom-button .button-banner {
+    font-size: 16px;
+}
+
+.custom-button:focus {
+    outline: none;
+}
+
+/* Above The code for Our banner button & 7th section */
+
+.eaight {
+    background-color: lightgrey;
+    padding-bottom: 40px;
+    padding-top: 65px;
+}
+
+.eaight h3 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.carousel-Flagship {
+    background: lightgrey;
+    padding-top: 30px;
+    /* Add some padding to the carousel */
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 20px;
+}
+
+.carousel-cell-Flagship {
+    width: 32%;
+    height: 420px;
+    margin-right: 10px;
+    background: lightgrey;
+    /* Background color if image does not load */
+    overflow: hidden;
+    /* Hide overflow to keep the border-radius effect */
+}
+
+.carousel-cell-Flagship img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    /* Ensure images cover the cell area */
+}
+
+.carousel-cell-Flagship.is-selected {
+    background: lightgray;
+    /* Highlight color for the selected cell */
+}
+
+/* Optional: Add some hover effect */
+.carousel-cell-Flagship:hover {
+    opacity: 0.8;
+    /* Slightly fade out on hover */
+}
+
+.carousel-cell-Flagship h3 {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Above The code for Our Flagship Projects & 8th section */
+.customers {
+    background-color: lightpink;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.customers h3 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.carousel-customers {
+    background-color: lightpink;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 30px;
+}
+
+.carousel-cell-customers {
+    display: flex;
+    /* Align image and text horizontally */
+    align-items: center;
+    /* Center align items vertically */
+    background-color: lightpink;
+    border-radius: 5px;
+    gap: 20px;
+    /* Space between image and text */
+    padding: 10px;
+    /* Padding inside each cell */
+    box-sizing: border-box;
+    /* Include padding and border in the element’s total width and height */
+}
+
+.carousel-cell-customers img {
+    width: 100%;
+    /* Fixed width for images */
+    height: 350px;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    /* Ensure image covers the space without distortion */
+}
+
+.carousel-cell-customers .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-cell-customers h5,
+.carousel-cell-customers h4 {
+    margin: 0;
+    /* Remove default margins */
+    font-family: 'Georgia', 'Times New Roman', serif;
+    /* Using serif fonts */
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #333;
+    border-radius: 5px;
+}
+
+.carousel-cell-customers h5 {
+    margin-bottom: 10px;
+    /* Space between h5 elements */
+}
+
+.carousel-cell-customers h4 {
+    font-weight: bold;
+    /* Make h4 text bold */
+}
+
+/* Above The code for Here is what our customers have to say & 9th section */
+
+
+.certificate {
+    background-color: white;
+    padding-top: 65px;
+    padding-bottom: 30px;
+}
+
+.certificate h3 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.carousel-certificate {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 100px;
+}
+
+.carousel-inner-certificate {
+    display: flex;
+    animation: scroll 30s linear infinite;
+}
+
+.logo-item-certificate {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 150px;
+    margin: 0 10px;
+    /* Space between logos */
+    background-color: white;
+    display: flex;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Above The code for Our Certifications & 10th section */
+
+.section-11 {
+    background-color: red;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+
+.section-11 p {
+    margin-left: 150px;
+    margin-right: 150px;
+    color: white;
+}
+
+/* Above The code for 11th section */
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 10%;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-logo p {
+    margin: 10px 0;
+}
+
+.footer-social-icons a {
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.footer-pages {
+    margin-left: 40px;
+}
+
+.footer-pages h3,
+.footer-subscribe h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-pages ul {
+    list-style-type: none;
+}
+
+.footer-pages ul li {
+    margin-bottom: 8px;
+}
+
+.footer-pages ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-subscribe form {
+    margin-top: 10px;
+}
+
+.footer-subscribe input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.footer-subscribe button {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    background-color: #333;
+    color: #ccc;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Above The code for footer & 11th section */
+
+section {
+    overflow: hidden;
+}

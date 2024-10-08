@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featherlite Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Web icon favicone-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./Images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- flickity carousel CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- Google Fonts HTML file to load the font -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <nav class="navbar" id="navbar">
+            <div class="logo">
+                <img src="./Images/Featherlite-PNG-Logo.png" alt="Featherlite Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Spaces</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Locate us</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./Images/Personal-space_website1.jpg" class="d-block w-100"
+                        alt="Corporate Furnishing Solution">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="head">Corporate Furnishing Solution</h5>
+                        <p class="para">Smart, ergonomic furniture for energized and productive teams</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./Images/HEALTHCARE-PATIENT-WARD.png" class="d-block w-100" alt="Healthcare Furnishing">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="head">Thoughtful Furnishing for Healthcare Institutions and Care Rooms</h5>
+                        <p class="para">Smart Solution for Health & Wellbeing Spaces</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Images/Auditorium_Banner.jpg" class="d-block w-100" alt="Education Furnishing">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="head-ex">Scientifically designed furniture for all aspects of education</h5>
+                        <p class="para-ex">Surroundings that enhance every aspect of the learning experience</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Images/home1.jpg" class="d-block w-100" alt="Comfort Spaces">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="head">Intelligent Spaces that are optimized for comfort</h5>
+                        <p class="para">Designed to Economize Space and Enhance Living</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- Above code for carosle banner and nav bar 1st or 2nd section-->
+
+    <section class="our-items">
+        <div class="flex-container">
+            <div class="item">
+                <img src="./Images/50m.png" alt="50 Million+">
+                <h3> 50 Million+ </h3>
+                <p> Sq.ft. of Space Transformed</p>
+            </div>
+            <div class="item">
+                <img src="./Images/clients.png" alt="20,000+">
+                <h3> 20,000+ </h3>
+                <p> Satisfied Corporate Clients</p>
+            </div>
+            <div class="item">
+                <img src="./Images/product.png" alt="60000+">
+                <h3> 60000+ Chairs </h3>
+                <p> Produced Every Month </p>
+            </div>
+            <div class="item">
+                <img src="./Images/workstation.png" alt="1500+ workstation">
+                <h3> 1500+ workstation </h3>
+                <p> Produced Every Month </p>
+            </div>
+            <div class="item">
+                <img src="./Images/solar.png" alt="320+ WP">
+                <h3> 320+ WP </h3>
+                <p> Of Solar Power Generated Every Day </p>
+            </div>
+        </div>
+    </section>
+    <!-- Above The code for our items 3rd section-->
+
+
+    <section>
+        <div>
+            <h2 class="space-text">Spaces We Cater To</h2>
+        </div>
+        <div class="flex-container-space">
+            <div class="item-space">
+                <img src="./Images/1_WorkSpaces.webp" alt="1_Work Spaces">
+                <h3>Work Spaces</h3>
+                <span>Ergonomic, sustainable design to enhance employee experience.</span>
+            </div>
+            <div class="item-space">
+                <img src="./Images/2_Education-Spaces.webp" alt="2_Education-Spaces">
+                <h3>Education Spaces</h3>
+                <span>Educators and learners benefit from spaces that revolve around</span>
+                <span>enhancing the learning experience.</span>
+            </div>
+            <div class="item-space">
+                <img src="./Images/3_HealthCare.webp" alt="3_HealthCare">
+                <h3>Healthcare Spaces</h3>
+                <span>Design philosophy that is focused on patient experience and</span>
+                <span>empowering caregivers.</span>
+            </div>
+            <div class="item-space">
+                <img src="./Images/4_HomeSpaces.webp" alt="4_HomeSpaces">
+                <h3> Home Spaces </h3>
+                <span>Shared spaces must tether spaces to their occupants, balancing</span>
+                <span>privacy and social connection.</span>
+            </div>
+        </div>
+
+    </section>
+    <!-- Above The code for Spaces We Cater To ot 4th section-->
+
+    <section class="sec-btn">
+        <div>
+            <button class="help-btn"> Need Help? Talk to Our Consultants </button>
+        </div>
+    </section>
+    <!-- Above The code for Help Button or 5th section -->
+
+    <section>
+        <div class="offer-text">
+            <h3>Our Offerings</h3>
+        </div>
+        <div class="flex-container-offer">
+            <div class="item-offer">
+                <img src="./Images/seating.webp" alt="Seating">
+                <h3>Seating</h3>
+            </div>
+            <div class="item-offer">
+                <img src="./Images/desking.webp" alt="Desking">
+                <h3>Desking</h3>
+            </div>
+            <div class="item-offer">
+                <img src="./Images/tables.webp" alt="Tables">
+                <h3>Tables</h3>
+            </div>
+            <div class="item-offer">
+                <img src="./Images/genesis.webp" alt="Genesis">
+                <h3>Genesis</h3>
+            </div>
+            <div class="item-offer">
+                <img src="./Images/soft seating.webp" alt="Soft Seating">
+                <h3>Soft Seating</h3>
+            </div>
+            <div class="item-offer">
+                <img src="./Images/storage.webp" alt="Storage">
+                <h3>Storage</h3>
+            </div>
+            <div class="item-offer">
+                <img src="./Images/ancillary product.webp" alt="Ancillary Products">
+                <h3>Ancillary Products</h3>
+            </div>
+            <div class="item-offer">
+                <img src="./Images/education.webp" alt="Education">
+                <h3>Education</h3>
+            </div>
+            <div class="item-offer">
+                <img src="./Images/healtcare.webp" alt="Healthcare">
+                <h3>Healthcare</h3>
+            </div>
+            <div class="item-offer">
+                <img src="./Images/home.webp" alt="Home">
+                <h3>Home</h3>
+            </div>
+        </div>
+    </section>
+    <!-- Above The code for Our Offerings & 6th section -->
+
+    <section>
+        <button class="custom-button">
+            <img src="./Images/ShopOnlineBanner.webp" class="button-image">
+            <span class="button-banner"></span>
+        </button>
+    </section>
+    <!-- Above The code for Our banner button & 7th section -->
+
+    <section class="eaight">
+        <h3> Our Flagship Projects </h3>
+        <div class="carousel-Flagship" data-flickity='{ "groupCells": true, "autoPlay": true, "wrapAround": true }'>
+            <div class="carousel-cell-Flagship"> <img src="./Images/Adobe.webp" alt="Adobe">
+                <h3>Adobe Bengaluru</h3>
+            </div>
+
+            <div class="carousel-cell-Flagship"> <img src="./Images/Samsung.webp" alt="Samsung">
+                <h3>Samsung Bengaluru</h3>
+            </div>
+
+            <div class="carousel-cell-Flagship"> <img src="./Images/Automation.webp" alt="Automation">
+                <h3>Automation Anywhere Bengaluru</h3>
+            </div>
+
+            <div class="carousel-cell-Flagship"> <img src="./Images/Rovi-Embassy.webp" alt="Rovi Embassy">
+                <h3>Rovi Embassy Bengaluru</h3>
+            </div>
+
+            <div class="carousel-cell-Flagship"> <img src="./Images/AmazonHyderabad.webp" alt="Amazon Hyderabad">
+                <h3>Amazon Hyderabad</h3>
+            </div>
+            <div class="carousel-cell-Flagship"> <img src="./Images/AMD-Hyderabad.webp" alt="AMD Hyderabad">
+                <h3>AMD-Hyderabad</h3>
+            </div>
+            <div class="carousel-cell-Flagship"> <img src="./Images/Diageo.webp" alt="Diageo">
+                <h3>Diageo Bengaluru</h3>
+            </div>
+            <div class="carousel-cell-Flagship"> <img src="./Images/DXC.webp" alt="DXC">
+                <h3>DXC Bengaluru</h3>
+            </div>
+            <div class="carousel-cell-Flagship"> <img src="./Images/DXC.webp" alt="DXC">
+                <h3> Unknow </h3>
+            </div>
+        </div>
+    </section>
+    <!-- Above The code for Our Flagship Projects & 8th section -->
+
+    <section class="customers">
+        <h3>Here is what our customers have to say</h3>
+        <div class="carousel-customers" data-flickity='{ "autoPlay": true }'>
+            <div class="carousel-cell-customers">
+                <img src="./Images/Sattva group.webp" alt="Sattva group">
+                <div class="text-content">
+                    <h5>We at Salarpuria Sattva Group would like to extend our compliments to Featherlite products Pvt.
+                        Ltd, for successful completion of supply & Installation of workstations Chairs of 9881 nos for
+                        Continental</h5>
+                    <h4>Automotive Components India Pvt. Ltd.</h4>
+                    <h4>Sattva Group</h4>
+                </div>
+            </div>
+            <div class="carousel-cell-customers">
+                <img src="./Images/Rajesh ravindran.webp" alt="Rajesh ravindran">
+                <div class="text-content">
+                    <h5>We appreciate Featherlite for successful completion and supply of 908Nos of Chairs and 906Nos of
+                        Tables</h5>
+                    <h4>Lam Research India</h4>
+                    <h4>Rajesh Ravindran</h4>
+                </div>
+            </div>
+            <div class="carousel-cell-customers">
+                <img src="./Images/Danske IT.webp" alt="Danske IT">
+                <div class="text-content">
+                    <h5>We are very satisfied with the quality of work & professionalism & dedication shown by
+                        Featherlite team members towards our project from start to finish</h5>
+                    <h4>Danske IT</h4>
+                    <h4>Mr. Jayaram S Govindaiah</h4>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Above The code for Here is what our customers have to say & 9th section -->
+
+    <section class="certificate">
+        <h3>Our Certifications</h3>
+        <div class="carousel-certificate">
+            <div class="carousel-inner-certificate">
+                <!-- Repeat these logo items as needed -->
+                <div class="logo-item-certificate"><img src="./Images/logo-1.webp" alt="logo-1"></div>
+                <div class="logo-item-certificate"><img src="./Images/logo-2.webp" alt="logo-2"></div>
+                <div class="logo-item-certificate"><img src="./Images/logo-3.webp" alt="logo-3"></div>
+                <div class="logo-item-certificate"><img src="./Images/logo-4.webp" alt="logo-4"></div>
+                <div class="logo-item-certificate"><img src="./Images/logo-5.webp" alt="logo-5"></div>
+                <div class="logo-item-certificate"><img src="./Images/logo-6.webp" alt="logo-6"></div>
+                <div class="logo-item-certificate"><img src="./Images/logo-7.webp" alt="logo-7"></div>
+                <div class="logo-item-certificate"><img src="./Images/logo-8.webp" alt="logo-8"></div>
+                <div class="logo-item-certificate"><img src="./Images/logo-9.webp" alt="logo-9"></div>
+                <div class="logo-item-certificate"><img src="./Images/logo-10.webp" alt="logo-10"></div>
+                <div class="logo-item-certificate"><img src="./Images/logo-11.webp" alt="logo-11"></div>
+    </section>
+
+    <!-- Above The code for Our Certifications & 10th section -->
+
+    <section class="section-11">
+        <p> Step into a world of endless furnishing possibilities at Featherlite. Explore our extensive range of
+            Home furniture, Office furniture, healthcare furniture, education furniture solutions and more, designed
+            to transform any space. </p> <br>
+
+        <p> Immerse yourself in a world of options, from classic to contemporary, each crafted from high-quality
+            materials. Experience the fusion of functionality and aesthetics as you browse through our carefully
+            curated selection and elevate your space with furniture that spells quality, innovation, and style. </p>
+    </section>
+
+    <!-- Above The code for 11th section -->
+
+    <section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="./Images/Featherlite-PNG-Logo.png" alt="Featherlite Logo"> <!-- Replace with your logo -->
+                    <p>Stay Connected!</p>
+                    <div class="footer-social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-pages">
+                    <h3>Pages</h3>
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Warranty Terms</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-subscribe">
+                    <h3>Subscribe to Featherlite InFocus</h3>
+                    <p>Enter your email address to subscribe to our blog. Featherlite infocus and receive updates on our
+                        latest posts!</p>
+                    <form>
+                        <input type="email" placeholder="Email Address">
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Featherlite &copy;2024</p>
+            </div>
+        </footer>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>
